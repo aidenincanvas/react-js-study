@@ -16,6 +16,9 @@ class App extends Component {
         <p className="App-intro">
           Successfully reloaded.
         </p>
+        <p className="App-intro">
+          Git successfully setted.
+        </p>
       </div>
     );
   }
