@@ -6,10 +6,8 @@
 
         <title>웹 브랜치 마크업 가이드</title>
 
-        <link href="../css/omweb_2017.css" rel="stylesheet"><!-- css -->
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../01.Markup/omweb/html/css/opre.css" rel="stylesheet">
-        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/guide.css" rel="stylesheet">
     </head>
     <body class="">
 
@@ -46,7 +44,7 @@
         <span class="close-slider">
             <img src="../img/common/btn-close-x.png" />
         </span>
-        <h1 class="display-4">수정내역</h1>
+        <h3>수정내역</h3>
         <div id="modification-log">
             <!-- 수정내역이 불러와지는 영역 -->
         </div>
@@ -57,519 +55,528 @@
     </div>
 
     <div class="container-fluid">
-        <!-- HTML list area -->
-        <table id="html-list-tbl" class="table table-sm table-striped table-hover">
-            <colgroup>
-                <col width="8%" />
-                <col />
-                <col />
-                <col width="15%" />
-                <col width="10%" />
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>차수</th>
-                    <th>화면명</th>
-                    <th>파일명</th>
-                    <th>파일경로</th>
-                    <th>링크 / 수정내역</th>
-                </tr>
-                <tr>
-                    <th colspan="5" class="text-center">HTML</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>메인</td>
-                    <td>main.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/main.html">새 창에서 열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>메인 - 2차 시안</td>
-                    <td>main_ver2.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/main_ver2.html">새 창에서 열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">main_ver2.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-11-28</td>
-                                        <td><span class="line"></span>화면구현</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-11-30</td>
-                                        <td><span class="line"></span>화면구현완료</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-12-04</td>
-                                        <td>
-                                            <span class="line"></span>애니메이션 추가<br />
-                                            <span class="line">12행</span> : CSS link 제거<br />
-                                            <span class="line">154행</span> : JS link 제거
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-12-05</td>
-                                        <td>
-                                            <span class="line">13행 ~ 19행</span> : CSS 스타일 추가<br />
-                                            <span class="line">78행</span> : 문구 변경 (개인 -> 가계)<br />
-                                            <span class="line">18행</span> : CSS 스타일 추가
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증요청 시작</td>
-                    <td>mo_auth_step_01.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_01.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증</td>
-                    <td>mo_auth_step_02.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_02.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증 완료 고객정보일치</td>
-                    <td>mo_auth_step_completed.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_completed.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증 에러 정보없음</td>
-                    <td>mo_auth_error_no_data.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_no_data.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증 에러 서비스 미대상</td>
-                    <td>mo_auth_error_not_matched.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_matched.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증 에러 정보불일치</td>
-                    <td>mo_auth_error_not_matched2.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_matched2.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>본인인증 에러 비고객</td>
-                    <td>mo_auth_error_not_customer.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_customer.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>기존등록내역</td>
-                    <td>form_loan_has_application.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_has_application.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>대출목적선택(신규등록)</td>
-                    <td>form_loan_step_01.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_01.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">form_loan_step_01.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-12-11</td>
-                                        <td><span class="line">31행</span> : 문구수정 부동산담보(구입)대출 -> 부동산담보대출</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>직장정보</td>
-                    <td>form_loan_step_02.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_02.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>직장정보있음</td>
-                    <td>form_loan_step_03.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_03.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>고객기본정보</td>
-                    <td>form_loan_step_04.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_04.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>작성완료</td>
-                    <td>form_loan_step_completed.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_completed.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>통장(분실)재발행 사전업무신청</td>
-                    <td>re_issue_1.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/re_issue_1.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>작성완료</td>
-                    <td>re_issue_2.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/re_issue_2.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td>고객필요서류</td>
-                    <td>mandatory-doc.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mandatory-doc.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>고객필요서류 - 2차</td>
-                    <td>mandatory-doc-ver2.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mandatory-doc-ver2.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">mandatory-doc-ver2.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-11-30</td>
-                                        <td><span class="line">60행</span> : 카카오톡으로 보내기 버튼 추가</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-12-04</td>
-                                        <td><span class="line">424행 ~ 436행</span> : 카카오톡으로 보내기 버튼에 SendKakao function 실행하도록 수정</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>인터넷뱅킹 개인 리스트</td>
-                    <td>internet_banking_list.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_list.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">internet_banking_form.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-12-12</td>
-                                        <td>
-                                            <span class="line">45행</span> : 기가입 시 "기가입" 텍스트 출력 <br />
-                                            <span class="line">Table</span> : 정렬 및 명칭 변경 "신청가능" -> "상태", "인터넷뱅킹" -> "신청가능"
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>인터넷뱅킹 개인 입력폼</td>
-                    <td>internet_banking_form.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_form.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">internet_banking_form.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-12-05</td>
-                                        <td><span class="line">29행</span> : input tag 에 id="id-input"이 추가 되었습니다.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-12-11</td>
-                                        <td>
-                                            <span class="line">29행</span> : maxlength="12" 추가<br />
-                                            <span class="line">31행</span> : class 변경 col-4 -> col-5
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="date">2017-12-12</td>
-                                        <td>
-                                            <span class="line">29행</span> : style="ime-mode:disabled" 추가로 영문자판만 선택가능
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>인터넷뱅킹 개인 완료</td>
-                    <td>internet_banking_completed.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_completed.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>인터넷뱅킹 에러 - 이미 가입된 고객</td>
-                    <td>internet_banking_msg_already_joined.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_msg_already_joined.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">internet_banking_msg_already_joined.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-12-11</td>
-                                        <td><span class="line">21행</span> : br tag 삭제됨</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-success">2차</span></th>
-                    <td>인터넷뱅킹 에러 - 입출금 계좌 없음</td>
-                    <td>internet_banking_msg_has_no_account.html</td>
-                    <td>/html/</td>
-                    <td>
-                        <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_msg_has_no_account.html">열기</a>
-                        <button type="button" class="open-log">수정내역보기</button>
-                        <!-- 수정내역 -->
-                        <div class="modification-list">
-                            <table class="log-table">
-                                <colgroup>
-                                    <col width="100px" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <th colspan="2" class="html-name">internet_banking_msg_has_no_account.html</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="date">2017-12-04</td>
-                                        <td><span class="line">17행</span> : 이미지 변경</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--// 수정내역 -->
-                    </td>
-                </tr>
-            </tbody>
-            <thead>
-                <tr>
-                    <th colspan="5" class="text-center">CSS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>bootsrap.min.css</td>
-                    <td>/html/css/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>opre.css</td>
-                    <td>/html/css/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>
-                        <span class="badge badge-primary">1차</span>
-                        <span class="badge badge-success">2차</span>
-                    </th>
-                    <td>2차에서 사용 컴포넌트 제거됨</td>
-                    <td><del>slick.css</del></td>
-                    <td>/html/css/</td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <thead>
-                <tr>
-                    <th colspan="5" class="text-center">JS</th>
-                </tr>
-            </tdead>
-            <tbody>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>bootstrap.min.js</td>
-                    <td>/js/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>jquery-3.2.1.min.js</td>
-                    <td>/js/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>opre.js</td>
-                    <td>/js/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><span class="badge badge-primary">1차</span></th>
-                    <td></td>
-                    <td>popper.min.js</td>
-                    <td>/js/</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>
-                        <span class="badge badge-primary">1차</span>
-                        <span class="badge badge-success">2차</span>
-                    </th>
-                    <td>2차에서 사용 컴포넌트 제거됨</td>
-                    <td><del>slick.min.js</del></td>
-                    <td>/js/</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col">
+                <span class="p-2 bg-warning text-dark">1주일 내에 수정사항 있을 시</span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <!-- HTML list area -->
+                <table id="html-list-tbl" class="table table-sm table-striped table-hover">
+                    <colgroup>
+                        <col width="8%" />
+                        <col />
+                        <col />
+                        <col width="15%" />
+                        <col width="10%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>차수</th>
+                            <th>화면명</th>
+                            <th>파일명</th>
+                            <th>파일경로</th>
+                            <th>링크 / 수정내역</th>
+                        </tr>
+                        <tr>
+                            <th colspan="5" class="text-center">HTML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>메인</td>
+                            <td>main.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/main.html">새 창에서 열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>메인 - 2차 시안</td>
+                            <td>main_ver2.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/main_ver2.html">새 창에서 열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">main_ver2.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-11-28</td>
+                                                <td><span class="line"></span>화면구현</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-11-30</td>
+                                                <td><span class="line"></span>화면구현완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-12-04</td>
+                                                <td>
+                                                    <span class="line"></span>애니메이션 추가<br />
+                                                    <span class="line">12행</span> : CSS link 제거<br />
+                                                    <span class="line">154행</span> : JS link 제거
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-12-05</td>
+                                                <td>
+                                                    <span class="line">13행 ~ 19행</span> : CSS 스타일 추가<br />
+                                                    <span class="line">78행</span> : 문구 변경 (개인 -> 가계)<br />
+                                                    <span class="line">18행</span> : CSS 스타일 추가
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증요청 시작</td>
+                            <td>mo_auth_step_01.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_01.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증</td>
+                            <td>mo_auth_step_02.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_02.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증 완료 고객정보일치</td>
+                            <td>mo_auth_step_completed.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_step_completed.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증 에러 정보없음</td>
+                            <td>mo_auth_error_no_data.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_no_data.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증 에러 서비스 미대상</td>
+                            <td>mo_auth_error_not_matched.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_matched.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증 에러 정보불일치</td>
+                            <td>mo_auth_error_not_matched2.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_matched2.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>본인인증 에러 비고객</td>
+                            <td>mo_auth_error_not_customer.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mo_auth_error_not_customer.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>기존등록내역</td>
+                            <td>form_loan_has_application.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_has_application.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>대출목적선택(신규등록)</td>
+                            <td>form_loan_step_01.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_01.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">form_loan_step_01.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-12-11</td>
+                                                <td><span class="line">31행</span> : 문구수정 부동산담보(구입)대출 -> 부동산담보대출</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>직장정보</td>
+                            <td>form_loan_step_02.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_02.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>직장정보있음</td>
+                            <td>form_loan_step_03.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_03.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>고객기본정보</td>
+                            <td>form_loan_step_04.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_04.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>작성완료</td>
+                            <td>form_loan_step_completed.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/form_loan_step_completed.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>통장(분실)재발행 사전업무신청</td>
+                            <td>re_issue_1.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/re_issue_1.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>작성완료</td>
+                            <td>re_issue_2.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/re_issue_2.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td>고객필요서류</td>
+                            <td>mandatory-doc.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mandatory-doc.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>고객필요서류 - 2차</td>
+                            <td>mandatory-doc-ver2.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/mandatory-doc-ver2.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">mandatory-doc-ver2.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-11-30</td>
+                                                <td><span class="line">60행</span> : 카카오톡으로 보내기 버튼 추가</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-12-04</td>
+                                                <td><span class="line">424행 ~ 436행</span> : 카카오톡으로 보내기 버튼에 SendKakao function 실행하도록 수정</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>인터넷뱅킹 개인 리스트</td>
+                            <td>internet_banking_list.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_list.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">internet_banking_form.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-12-12</td>
+                                                <td>
+                                                    <span class="line">45행</span> : 기가입 시 "기가입" 텍스트 출력 <br />
+                                                    <span class="line">Table</span> : 정렬 및 명칭 변경 "신청가능" -> "상태", "인터넷뱅킹" -> "신청가능"
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>인터넷뱅킹 개인 입력폼</td>
+                            <td>internet_banking_form.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_form.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">internet_banking_form.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-12-05</td>
+                                                <td><span class="line">29행</span> : input tag 에 id="id-input"이 추가 되었습니다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-12-11</td>
+                                                <td>
+                                                    <span class="line">29행</span> : maxlength="12" 추가<br />
+                                                    <span class="line">31행</span> : class 변경 col-4 -> col-5
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">2017-12-12</td>
+                                                <td>
+                                                    <span class="line">29행</span> : style="ime-mode:disabled" 추가로 영문자판만 선택가능
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>인터넷뱅킹 개인 완료</td>
+                            <td>internet_banking_completed.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_completed.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>인터넷뱅킹 에러 - 이미 가입된 고객</td>
+                            <td>internet_banking_msg_already_joined.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_msg_already_joined.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">internet_banking_msg_already_joined.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-12-11</td>
+                                                <td><span class="line">21행</span> : br tag 삭제됨</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-success">2차</span></th>
+                            <td>인터넷뱅킹 에러 - 입출금 계좌 없음</td>
+                            <td>internet_banking_msg_has_no_account.html</td>
+                            <td>/html/</td>
+                            <td>
+                                <a class="has-link" target="blank" href="../../01.Markup/omweb/html/internet_banking_msg_has_no_account.html">열기</a>
+                                <button type="button" class="btn open-log">수정내역보기</button>
+                                <!-- 수정내역 -->
+                                <div class="modification-list">
+                                    <table class="log-table">
+                                        <colgroup>
+                                            <col width="100px" />
+                                            <col />
+                                        </colgroup>
+                                        <thead>
+                                            <th colspan="2" class="html-name">internet_banking_msg_has_no_account.html</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">2017-12-04</td>
+                                                <td><span class="line">17행</span> : 이미지 변경</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// 수정내역 -->
+                            </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="5" class="text-center">CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>bootsrap.min.css</td>
+                            <td>/html/css/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>opre.css</td>
+                            <td>/html/css/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="badge badge-primary">1차</span>
+                                <span class="badge badge-success">2차</span>
+                            </th>
+                            <td>2차에서 사용 컴포넌트 제거됨</td>
+                            <td><del>slick.css</del></td>
+                            <td>/html/css/</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="5" class="text-center">JS</th>
+                        </tr>
+                    </tdead>
+                    <tbody>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>bootstrap.min.js</td>
+                            <td>/js/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>jquery-3.2.1.min.js</td>
+                            <td>/js/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>opre.js</td>
+                            <td>/js/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th><span class="badge badge-primary">1차</span></th>
+                            <td></td>
+                            <td>popper.min.js</td>
+                            <td>/js/</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="badge badge-primary">1차</span>
+                                <span class="badge badge-success">2차</span>
+                            </th>
+                            <td>2차에서 사용 컴포넌트 제거됨</td>
+                            <td><del>slick.min.js</del></td>
+                            <td>/js/</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <div id="anchor-img-list" class="h2-cover container-fluid">
@@ -1070,53 +1077,56 @@
     </div>
     <!-- Style guide area -->
     <div id="anchor-layout" class="h2-cover container-fluid">
-        <h2 class="display-3">스타일 가이드</h2>
+        <h2 class="display-4">스타일 가이드</h2>
     </div>
     <div class="container-fluid">
         <h3 class="mt-4">Layout</h3>
         <div class="container-fluid text-center">
-            <h3>L000147 - 모바일 UI 전용 레이아웃</h3>
-            <div class="layout-sample">
-                <div class="header-sample">
-                    <h5>
-                        Header
-                    </h5>
+            <div class="row align-items-center">
+                <div class="col">
+                    <h5>L000147 - 모바일 UI 전용 레이아웃</h5>
                 </div>
-                <div class="cp-sample">
-                    <div>
-                        <h5>Contents Area</h5>
-                        <p>
-                            id="CP"
-                        </p>
+                <div class="col">
+                    <div class="layout-sample">
+                        <div class="header-sample">
+                            <h5>
+                                Header
+                            </h5>
+                        </div>
+                        <div class="cp-sample">
+                            <div>
+                                <h5>Contents Area</h5>
+                                <p>
+                                    id="CP"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-sample">
+                            <h5>
+                                Footer
+                            </h5>
+                        </div>
                     </div>
                 </div>
-                <div class="footer-sample">
-                    <h5>
-                        Footer
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row mt-4">
-                <h5>Gap</h5>
-            </div>
-            <div class="row">
-                <a class="btn01">색상</a>
-                <a class="btn02">보조</a>
-                <a class="btn03">보조</a>
             </div>
         </div>
         <h3 id="anchor-typo" class="mt-4">Typography</h3>
         <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="box_guide text01 mb-4">
-                    <ul class="list_type01">
-                        <li>
-                            omweb_2017.css 에 의해 body의 rem 은 10px 로 설정되었음
-                        </li>
-                    </ul>
-                </div>
+            <div class="row">
+                <ul class="list-unstyled">
+                    <li>
+                        Lorem ipsum dolor sit amet
+                    </li>
+                    <li>
+                        Consectetur adipiscing elit
+                    </li>
+                    <li>
+                        Integer molestie lorem at massa
+                    </li>
+                    <li>
+                        Facilisis in pretium nisl aliquet
+                    </li>
+                </ul>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -1136,13 +1146,6 @@
                 </div>
                 <div class="col-12">
                     <h6>h6.제목글씨</h6>
-                </div>
-                <div class="col-12">
-                    <p>
-                        p tag 일반글씨<br />
-                        <span class="poi_blue">포인트 컬러 파란색</span><br />
-                        <span class="poi_red">포인트 컬러 빨간색</span>
-                    </p>
                 </div>
             </div>
         </div>
@@ -1326,60 +1329,6 @@
             </div>
         </div>
 
-        <h5 id="popup" class="mt-4">Popup</h5>
-        <div class="container-fluid">
-            <div class="row">
-                <button class="btn btn-secondary btn-service-info-2" data-toggle="modal" data-target=".modal-introduce">서비스 안내</button>
-                <!-- 서비스 안내 팝업 --><!-- 문구 수정 2017.11.01 -->
-                <div class="modal fade modal-introduce" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="container-fluid p-5">
-                                <div class="row">
-                                    <h2 class="mt-3">이체한도</h2>
-                                </div>
-                                <div class="row">
-                                    <table class="tbl_list">
-                                        <thead>
-                                            <th>구분</th>
-                                            <th>1회</th>
-                                            <th>1일</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>보안카드</th>
-                                                <td>1천만원</td>
-                                                <td>1천만원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>OTP</th>
-                                                <td>1억원</td>
-                                                <td>5억원</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="row mt-3"> <!-- class mt-3 추가 2017.11.21 -->
-                                    <div class="box_guide text01">
-                        				<ul class="list_type01">
-                        					<li>이체한도 최소 금액은 1회/1일 1만원 입니다.</li>
-                                            <li>이체한도는 만원 단위로 신청 가능합니다.</li>
-                        				</ul>
-                        			</div>
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row" role="group">
-                                    <a class="btn-block btn03" data-dismiss="modal" aria-label="Close">닫기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--// 서비스 안내 팝업 -->
-            </div>
-        </div>
-
         <h2 class="mt-4">라이브러리</h2>
         <ul class="list-group">
             <li class="list-group-item">jQuery</li>
@@ -1393,7 +1342,6 @@
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../../01.Markup/omweb/js/opre.js"></script>
+    <script src="../js/guide.js"></script>
     </body>
 </html>

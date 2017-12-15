@@ -25,14 +25,14 @@ $(document).ready(function(){
     });
 
     $(".open-log").click(function(){
-        // var target_id = $(this).siblings(".modification-list").find("table").prop("id");
         var target_id = $(this).parents("tr").prop("id");
 
         $("#modification-log-slider").addClass("in");
         $("#" + target_id + " td:last-child .modification-list table").clone().appendTo("#modification-log");
         $("#modification-log").fadeIn();
 
-        // if (target_id == null) {
+        // 수정내역 없음 출력을 위한 개발 필요
+        // if ($("#" + target_id + " td:last-child").has("div") == null) {
         //     $("#modification-log").html("수정내역이 없습니다.");
         // }
     });
@@ -105,7 +105,4 @@ $(document).ready(function(){
 
         return [year, month, day].join('');
     }
-
-    // 최근내역 자동표시 - 날짜비교
-    // recentModification ();
 });
